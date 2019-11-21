@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Cars For Days</h1>
+
 <div class='row'>
+ 
     {% for car in cars %}
     <div class='col-md-3'>
         <img src="{{ car.Image }}" style="width: 100% !important;" alt="">
@@ -29,5 +30,9 @@
     </div>
     {% endfor %}
 </div>  
+
+<div class="footer">
+<p>Footer</p>
+</div>
 {% endblock %} 
 
