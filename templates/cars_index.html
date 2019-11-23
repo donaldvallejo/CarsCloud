@@ -3,18 +3,23 @@
 {% block content %}
 
 <div class='row'>
- 
+    <aside class="sideBar col-sm-3">
+        <div>Filter By</div>
+        <div >Make</div>
+        <div >Model</div>
+        <div >Year</div>
+        <div >Color</div>
+        <div >Price</div>
+    </aside>
+
+    <div class="carContent col-sm-9">
     {% for car in cars %}
-    <div class='col-md-3'>
+    <div class='col-md-4'>
         <img src="{{ car.Image }}" style="width: 100% !important;" alt="">
         <div class="container">
     <div class="row centered">
         <h2 class="col-sm-3"><a href='/cars/purchase{{ car._id }}'><button class="btn btn-success">Purchase{{ purchase }}</button></a></h2>
-        <h2 class="col-sm-3"><a href='/cars/{{ car._id }}'><button class="btn btn-primary">Comment{{ comment }}</button></a></h2>
-        <h2 class="col-sm-3"><a href='/cars/{{ car._id }}/edit'><button class="btn btn-warning">Edit{{ edit }}</button></a></h2>
-        <h2 class="col-sm-3"><form method="POST" action="/cars/{{ car._id }}/delete"><button type="submit" class="btn btn-danger">Delete{{ delete }}</button></form></h2>
 
-<nav class="searchNav"></nav>
     </div>
         </div>
             <div class="row offset-md-1 centered">
@@ -29,10 +34,7 @@
             </div>
     </div>
     {% endfor %}
-</div>  
-
-<div class="footer">
-<p>Footer</p>
+</div>
 </div>
 {% endblock %} 
 
