@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
 <div class='row'>
     <aside class="sideBar col-sm-3">
         <div>Filter By</div>
-        <div >Make</div>
-        <div >Model</div>
-        <div >Year</div>
-        <div >Color</div>
-        <div >Price</div>
+        <a href=""></a>
+        <div class="sideBarButtons"><a href="">Make</a></div>
+        <div class="sideBarButtons"><a href="">Model</a></div>
+        <div class="sideBarButtons"><a href="">Year</a></div>
+        <div class="sideBarButtons"><a href="">Color</a></div>
+        <div class="sideBarButtons"><a href="">Price</a></div>
     </aside>
 
-    <div class="carContent col-sm-9">
+    <div class=" col-sm-9">
     {% for car in cars %}
-    <div class='col-md-4'>
+    <div class='col-md-5 carContent'>
         <img src="{{ car.Image }}" style="width: 100% !important;" alt="">
         <div class="container">
     <div class="row centered">
