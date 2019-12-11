@@ -17,6 +17,16 @@ def cars_index():
   """Show all cars"""
   return render_template('cars_index.html', cars=cars.find())
 
+@app.route('/home')
+def home():
+  """Show Home page"""
+  return render_template('home.html')
+
+@app.route('/finance')
+def finance():
+  """Show Finance page"""
+  return render_template('finance.html')
+
 @app.route('/cars/new')
 def cars_new():
   """Create cars"""
