@@ -5,16 +5,16 @@
 <div class='row'>
     <aside class="sideBar col-sm-3">
         <div>Filter By</div>
-        <div >Make</div>
-        <div >Model</div>
-        <div >Year</div>
-        <div >Color</div>
-        <div >Price</div>
+        <a href=""><div action="/search" class="sideBarButtons">Make</div></a>
+        <a href=""><div action="/search" class="sideBarButtons">Model</div></a>
+        <a href=""><div action="/search" class="sideBarButtons">Year</div></a>
+        <a href=""><div action="/search" class="sideBarButtons">Color</div></a>
+        <a href=""><div action="/search" class="sideBarButtons">Price</div></a>
     </aside>
 
     <div class="carContent col-sm-9">
     {% for car in cars %}
-    <div class='col-md-4'>
+    <div class='col-md-3-not'>
         <img src="{{ car.Image }}" style="width: 100% !important;" alt="">
         <div class="container">
     <div class="row centered">
