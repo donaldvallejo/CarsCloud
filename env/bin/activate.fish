@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/localscrub/dev/makeSchool/SPD/code/Cars/env"
+set -gx VIRTUAL_ENV "/Users/localscrub/dev/makeSchool/SPD/code/CarsCloud/env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
