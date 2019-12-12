@@ -1,7 +1,36 @@
 <!-- templates/home.html -->
-test
 {% extends 'base.html' %}
-test
 {% block content %}
-    <h1>{{ msg }}</h1>
+<div class="row">
+    <div class="colorlayer" style="background-color: #2F8EC2; opacity: 70%;">
+        <img src="static/img/1.jpg" alt="">
+    </div>
+</div>
+<div class="row">
+    <div class="homeText" style="padding: 20px; font-size: 30px; margin: 0 auto;">
+    <p>
+        Thousands of cars to choose from 
+        Noone has better deals than us.         
+    </p>
+    </div>
+    <div class="row" style="margin: 0 auto;">
+            <div class="card-group">
+                    <div class="card" style="margin-right: 80px;">
+                      <img src="static/img/boy.png" class="card-img-top" alt="..." style="height: 40%; width: 20%;">
+                      <div class="card-body">
+                        <h5 class="card-title">John Doe</h5>
+                        <p class="card-text">Im super satified with my new car</p>
+                      </div>
+                    </div>
+                    
+                    <div class="card">
+                      <img src="static/img/girl.png" class="card-img-top" alt="" style="height: 40%; width: 20%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Jane Doe</h5>
+                        <p class="card-text">My new car rocks thanks car cloud</p>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+</div>
 {% endblock %}

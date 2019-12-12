@@ -40,6 +40,16 @@ nav {
   z-index: 1;
 }
 
+.colorlayer {
+  background-color: #2F8EC2;
+  opacity: 60%;
+}
+
+.homeText {
+  padding: 20px !important;
+  font-size: 20px !important;
+}
+
 .sideBarButtons {
   margin-top: 20px;
   width: 100%;
