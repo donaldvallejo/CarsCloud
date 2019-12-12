@@ -1,4 +1,11 @@
 # sudo lsof -iTCP -sTCP:LISTEN -n -P
+# https://dreamfit01.herokuapp.com/ | https://git.heroku.com/dreamfit01.git
+
+# heroku	https://git.heroku.com/dreamfit01.git (fetch)
+# heroku	https://git.heroku.com/dreamfit01.git (push)
+# origin	https://github.com/donaldvallejo/CarsCloud.git (fetch)
+# origin	https://github.com/donaldvallejo/CarsCloud.git (push)
+
 import os
 from datetime import datetime
 from flask import Flask, render_template, request, redirect, url_for
